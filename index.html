@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <title>Welcome to My ESL Classroom</title>
   <style>
+    .booking-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #144426;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(43, 104, 105, 0.1);
+}
+
+.booking-btn:hover {
+  background-color: #0bc834b9;
+  transform: scale(1.05);
+}
     body {
       font-family: 'Courier New', Courier, monospace;
       padding: 20px;
@@ -21,16 +38,33 @@
     .btn {
       display: inline-block;
       padding: 10px 20px;
-      background-color: #080a05;
-      color: rgb(231, 232, 223);
+      background-color: #f6f8f3;
+      color: rgba(7, 8, 7, 0.822);
       text-decoration: none;
+      font-weight: bold;
       border-radius: 5px;
     }
+
+    @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.booking-btn {
+  animation: fadeInUp 1s ease-in-out;
+}
   </style>
 </head>
 <body>
   <div id="myDIV">
   <h1 class="center-text">Welcome to Utter English</h1>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <p> Your fun escape in learning English!</p>
   <form action=https://formspree.io/f/xgvadyon method="POST">
     <label>
@@ -48,4 +82,6 @@
     <button type="submit" class="btn">Send Message</button>
   </form>
   
-  <h2><a href="https://calendly.com/rmlnduenas" target="_blank" class="btn">Book a Lesson via Calendar</a></h2></div>
+  <h2><a href="https://calendly.com/rmlnduenas" target="_blank" class="booking-btn">Book a Lesson via Calendar</a></h2></div>
+
+  
