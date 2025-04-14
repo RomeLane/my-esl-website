@@ -2,12 +2,11 @@
 <html lang="en">
 <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Welcome to My ESL Classroom</title>
   <style>
     .booking-btn {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #144426;
+  padding: 10px 14px;
+  background-color: #206da4;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -18,19 +17,23 @@
 }
 
 .booking-btn:hover {
-  background-color: #0bc834b9;
+  background-color: #1dd8f4b9;
   transform: scale(1.05);
 }
     body {
       font-family: 'Courier New', Courier, monospace;
-      padding: 20px;
-      background-color: #bddd8a;
-    }
+      padding: 18px;
+      background-image: url('https://github.com/RomeLane/my-esl-website/blob/main/Your%20paragraph%20text_20250414_224944_0000.png?raw=true');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
     #myDIV {
   
-  text-align: center;}
+  text-align: right;}
     h1 {
-      color: #0a0c0d;
+      color: #edeff0;
     }
     p {
       font-size: 22px;
@@ -59,13 +62,22 @@
 .booking-btn {
   animation: fadeInUp 1s ease-in-out;
 }
+
+label {
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 black,  
+                 1px -1px 0 black,
+                -1px  1px 0 black,
+                 1px  1px 0 black;
+  }
   </style>
 </head>
 <body>
   <div id="myDIV">
-  <h1 class="center-text">Welcome to Utter English</h1>
+  <h1 class="center-text">Utter the Otter Way!</h1>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <p> Your fun escape in learning English!</p>
+  <p> Start here ↓ </p>
   <form action=https://formspree.io/f/xgvadyon method="POST">
     <label>
       Your Name:
@@ -81,6 +93,11 @@
     </label><br><br>
     <button type="submit" class="btn">Send Message</button>
   </form>
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.add('loaded');
+    });
+  </script> </body>
   
   <h2><a href="https://calendly.com/rmlnduenas" target="_blank" class="booking-btn">Book a Lesson via Calendar</a></h2></div>
 
